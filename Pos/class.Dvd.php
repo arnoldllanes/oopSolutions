@@ -12,6 +12,7 @@ class Dvd extends Product{
     protected $_duration;
     
     public function __construct($title, $duration) {
+        parent::__construct();
         $this->_type = 'DVD';
         $this->_duration = $duration;
         $this->_title = $title;        
